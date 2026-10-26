@@ -112,7 +112,7 @@ MealPlannerAgent/
 **דרישות:** Python 3.13 ו-uv.
 
 ```powershell
-git clone <repo-url>
+git clone https://github.com/shira8834/MealPlannerAgent.git
 cd MealPlannerAgent
 uv sync                      # מתקין בדיוק את הגרסאות שב-uv.lock
 ```
