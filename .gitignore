@@ -1,0 +1,21 @@
+# Secrets - never commit the real API key (only the example file is kept)
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Runtime state created by the agent (each run starts clean)
+data/
+*.log
+
+# Personal / local settings
+.claude/settings.local.json
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

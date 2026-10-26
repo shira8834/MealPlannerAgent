@@ -1,0 +1,289 @@
+{
+  "version": "api",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "memory_at_start": {
+    "preferences": {},
+    "last_plan": null
+  },
+  "sessions": [
+    {
+      "name": "session1",
+      "session_id": "session1",
+      "memory_after": {
+        "preferences": {
+          "avoid": [
+            "mushroom"
+          ]
+        },
+        "last_plan": {
+          "days": [
+            {
+              "day": 1,
+              "dinner": "r11"
+            },
+            {
+              "day": 2,
+              "dinner": "r12"
+            },
+            {
+              "day": 3,
+              "dinner": "r13"
+            }
+          ]
+        }
+      },
+      "turns": [
+        {
+          "user": "שלום! אני מחפשת רעיונות לארוחת ערב. אילו מתכונים יש במאגר?",
+          "answer": "done 1",
+          "tools": [
+            "search_recipes"
+          ],
+          "usage": {
+            "simulated": true,
+            "input_tokens": 200,
+            "cache_read_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 40,
+            "model_calls": 2,
+            "compaction_calls": 0,
+            "tools": [
+              "search_recipes"
+            ],
+            "cost_usd": 0.0016,
+            "seconds": 0.01
+          }
+        },
+        {
+          "user": "חשוב לי שזה יישמר: אני לא אוכלת פטריות. בבקשה לשמור את ההעדפה הזאת.",
+          "answer": "done 2",
+          "tools": [
+            "save_preference"
+          ],
+          "usage": {
+            "simulated": true,
+            "input_tokens": 200,
+            "cache_read_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 40,
+            "model_calls": 2,
+            "compaction_calls": 0,
+            "tools": [
+              "save_preference"
+            ],
+            "cost_usd": 0.0016,
+            "seconds": 0.0
+          }
+        },
+        {
+          "user": "אפשר לבנות לי תוכנית ארוחות ערב לשלושה ימים?",
+          "answer": "done 3",
+          "tools": [
+            "plan_meals"
+          ],
+          "usage": {
+            "simulated": true,
+            "input_tokens": 200,
+            "cache_read_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 40,
+            "model_calls": 2,
+            "compaction_calls": 0,
+            "tools": [
+              "plan_meals"
+            ],
+            "cost_usd": 0.0016,
+            "seconds": 0.01
+          }
+        },
+        {
+          "user": "עכשיו אפשר רשימת קניות לתוכנית הזאת?",
+          "answer": "done 4",
+          "tools": [
+            "create_shopping_list"
+          ],
+          "usage": {
+            "simulated": true,
+            "input_tokens": 200,
+            "cache_read_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 40,
+            "model_calls": 2,
+            "compaction_calls": 0,
+            "tools": [
+              "create_shopping_list"
+            ],
+            "cost_usd": 0.0016,
+            "seconds": 0.01
+          }
+        }
+      ],
+      "simulated": true
+    },
+    {
+      "name": "session2",
+      "session_id": "session2",
+      "memory_after": {
+        "preferences": {
+          "avoid": []
+        },
+        "last_plan": {
+          "days": [
+            {
+              "day": 1,
+              "dinner": "r10"
+            },
+            {
+              "day": 2,
+              "dinner": "r11"
+            },
+            {
+              "day": 3,
+              "dinner": "r12"
+            }
+          ]
+        }
+      },
+      "turns": [
+        {
+          "user": "היי, חזרתי. מה שמור אצלך על ההעדפות שלי ועל התוכנית שהכנו?",
+          "answer": "שמרתי שאת לא אוכלת פטריות, והתוכנית היא r11, r12, r13.",
+          "tools": [],
+          "usage": {
+            "simulated": true,
+            "input_tokens": 100,
+            "cache_read_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 20,
+            "model_calls": 1,
+            "compaction_calls": 0,
+            "tools": [],
+            "cost_usd": 0.0008,
+            "seconds": 0.0
+          }
+        },
+        {
+          "user": "שיניתי את דעתי: עכשיו אני כן אוכלת פטריות. בבקשה לעדכן את ההעדפה.",
+          "answer": "done 6",
+          "tools": [
+            "save_preference"
+          ],
+          "usage": {
+            "simulated": true,
+            "input_tokens": 200,
+            "cache_read_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 40,
+            "model_calls": 2,
+            "compaction_calls": 0,
+            "tools": [
+              "save_preference"
+            ],
+            "cost_usd": 0.0016,
+            "seconds": 0.01
+          }
+        },
+        {
+          "user": "אפשר תוכנית חדשה של ארוחות ערב לשלושה ימים?",
+          "answer": "done 7",
+          "tools": [
+            "plan_meals"
+          ],
+          "usage": {
+            "simulated": true,
+            "input_tokens": 200,
+            "cache_read_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 40,
+            "model_calls": 2,
+            "compaction_calls": 0,
+            "tools": [
+              "plan_meals"
+            ],
+            "cost_usd": 0.0016,
+            "seconds": 0.01
+          }
+        },
+        {
+          "user": "מה ההעדפות השמורות שלי עכשיו?",
+          "answer": "done 8",
+          "tools": [],
+          "usage": {
+            "simulated": true,
+            "input_tokens": 100,
+            "cache_read_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 20,
+            "model_calls": 1,
+            "compaction_calls": 0,
+            "tools": [],
+            "cost_usd": 0.0008,
+            "seconds": 0.01
+          }
+        }
+      ],
+      "simulated": true
+    }
+  ],
+  "totals": {
+    "simulated": true,
+    "input_tokens": 1400,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "output_tokens": 280,
+    "model_calls": 14,
+    "cost_usd": 0.0112,
+    "seconds": 0.06
+  },
+  "checks": [
+    {
+      "name": "clean_start",
+      "passed": true,
+      "detail": "memory at start: {'preferences': {}, 'last_plan': None}"
+    },
+    {
+      "name": "search_tool_used",
+      "passed": true,
+      "detail": "turn 1 tools: ['search_recipes']"
+    },
+    {
+      "name": "mushroom_preference_saved",
+      "passed": true,
+      "detail": "avoid after session 1: ['mushroom']"
+    },
+    {
+      "name": "plan_3_days_without_mushrooms",
+      "passed": true,
+      "detail": "plan after session 1: ['r11', 'r12', 'r13']"
+    },
+    {
+      "name": "shopping_list_created",
+      "passed": true,
+      "detail": "turn 4 tools: ['create_shopping_list']"
+    },
+    {
+      "name": "new_instance_in_session2",
+      "passed": true,
+      "detail": "session ids: session1 / session2"
+    },
+    {
+      "name": "memory_recalled_in_session2",
+      "passed": true,
+      "detail": "turn 5 answer mentions mushrooms"
+    },
+    {
+      "name": "contradiction_replaced_old_preference",
+      "passed": true,
+      "detail": "avoid after session 2: []"
+    },
+    {
+      "name": "mushroom_recipes_available_again",
+      "passed": true,
+      "detail": "mushroom recipes allowed now: ['r10', 'r17']; plan after session 2: ['r10', 'r11', 'r12']"
+    }
+  ],
+  "checks_passed": "9/9",
+  "simulated": true,
+  "data_source": "SIMULATED: FakeClient with a scripted model, no API call. The tool calls, saved state and checks are real harness behavior on scripted model answers. Tokens, cache, cost and time are fake numbers, NOT measurements, and must not be compared with real runs."
+}

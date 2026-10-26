@@ -1,0 +1,24 @@
+[project]
+name = "meal-planner-agent"
+version = "0.1.0"
+description = "Course assignment: a meal planning agent built twice (Messages API and Claude Agent SDK)"
+requires-python = ">=3.13"
+# Exact versions, so every run uses the same libraries (uv.lock locks the rest)
+dependencies = [
+    "anthropic==2.3.0",
+    "claude-agent-sdk==0.2.174",
+    "python-dotenv==1.2.4",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==9.1.1",
+]
+
+[tool.uv]
+# This is an app, not a library we publish
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,169 @@
+[
+  {
+    "id": "r01", "name": "Shakshuka", "meal": "breakfast", "minutes": 25, "servings": 2,
+    "tags": ["vegetarian", "gluten_free"],
+    "ingredients": [
+      {"item": "eggs", "amount": 4, "unit": "pcs"},
+      {"item": "tomatoes", "amount": 4, "unit": "pcs"},
+      {"item": "onion", "amount": 1, "unit": "pcs"},
+      {"item": "olive oil", "amount": 2, "unit": "tbsp"}
+    ]
+  },
+  {
+    "id": "r02", "name": "Oatmeal with Banana", "meal": "breakfast", "minutes": 10, "servings": 1,
+    "tags": ["vegetarian"],
+    "ingredients": [
+      {"item": "oats", "amount": 80, "unit": "g"},
+      {"item": "milk", "amount": 250, "unit": "ml"},
+      {"item": "banana", "amount": 1, "unit": "pcs"}
+    ]
+  },
+  {
+    "id": "r03", "name": "Avocado Toast", "meal": "breakfast", "minutes": 10, "servings": 1,
+    "tags": ["vegetarian", "vegan"],
+    "ingredients": [
+      {"item": "bread", "amount": 2, "unit": "slices"},
+      {"item": "avocado", "amount": 1, "unit": "pcs"},
+      {"item": "lemon", "amount": 1, "unit": "pcs"}
+    ]
+  },
+  {
+    "id": "r04", "name": "Yogurt Granola Bowl", "meal": "breakfast", "minutes": 5, "servings": 1,
+    "tags": ["vegetarian"],
+    "ingredients": [
+      {"item": "yogurt", "amount": 200, "unit": "g"},
+      {"item": "granola", "amount": 50, "unit": "g"},
+      {"item": "honey", "amount": 1, "unit": "tbsp"}
+    ]
+  },
+  {
+    "id": "r05", "name": "Israeli Salad with Tahini", "meal": "lunch", "minutes": 15, "servings": 2,
+    "tags": ["vegetarian", "vegan", "gluten_free"],
+    "ingredients": [
+      {"item": "tomatoes", "amount": 3, "unit": "pcs"},
+      {"item": "cucumbers", "amount": 3, "unit": "pcs"},
+      {"item": "tahini", "amount": 3, "unit": "tbsp"},
+      {"item": "lemon", "amount": 1, "unit": "pcs"}
+    ]
+  },
+  {
+    "id": "r06", "name": "Lentil Soup", "meal": "lunch", "minutes": 40, "servings": 4,
+    "tags": ["vegetarian", "vegan", "gluten_free"],
+    "ingredients": [
+      {"item": "red lentils", "amount": 300, "unit": "g"},
+      {"item": "onion", "amount": 1, "unit": "pcs"},
+      {"item": "carrots", "amount": 2, "unit": "pcs"},
+      {"item": "olive oil", "amount": 2, "unit": "tbsp"}
+    ]
+  },
+  {
+    "id": "r07", "name": "Tuna Sandwich", "meal": "lunch", "minutes": 10, "servings": 1,
+    "tags": [],
+    "ingredients": [
+      {"item": "bread", "amount": 2, "unit": "slices"},
+      {"item": "canned tuna", "amount": 1, "unit": "cans"},
+      {"item": "mayonnaise", "amount": 1, "unit": "tbsp"}
+    ]
+  },
+  {
+    "id": "r08", "name": "Falafel Pita", "meal": "lunch", "minutes": 30, "servings": 2,
+    "tags": ["vegetarian", "vegan"],
+    "ingredients": [
+      {"item": "chickpeas", "amount": 400, "unit": "g"},
+      {"item": "pita", "amount": 2, "unit": "pcs"},
+      {"item": "tahini", "amount": 2, "unit": "tbsp"},
+      {"item": "parsley", "amount": 1, "unit": "bunch"}
+    ]
+  },
+  {
+    "id": "r09", "name": "Quinoa Salad", "meal": "lunch", "minutes": 25, "servings": 2,
+    "tags": ["vegetarian", "vegan", "gluten_free"],
+    "ingredients": [
+      {"item": "quinoa", "amount": 150, "unit": "g"},
+      {"item": "cucumbers", "amount": 2, "unit": "pcs"},
+      {"item": "parsley", "amount": 1, "unit": "bunch"},
+      {"item": "lemon", "amount": 1, "unit": "pcs"}
+    ]
+  },
+  {
+    "id": "r10", "name": "Chicken Stir Fry", "meal": "dinner", "minutes": 25, "servings": 2,
+    "tags": ["dairy_free"],
+    "ingredients": [
+      {"item": "chicken breast", "amount": 400, "unit": "g"},
+      {"item": "mushrooms", "amount": 200, "unit": "g"},
+      {"item": "bell pepper", "amount": 2, "unit": "pcs"},
+      {"item": "soy sauce", "amount": 3, "unit": "tbsp"},
+      {"item": "rice", "amount": 200, "unit": "g"}
+    ]
+  },
+  {
+    "id": "r11", "name": "Pasta with Tomato Sauce", "meal": "dinner", "minutes": 20, "servings": 2,
+    "tags": ["vegetarian", "vegan"],
+    "ingredients": [
+      {"item": "pasta", "amount": 250, "unit": "g"},
+      {"item": "tomatoes", "amount": 4, "unit": "pcs"},
+      {"item": "garlic", "amount": 2, "unit": "cloves"},
+      {"item": "olive oil", "amount": 2, "unit": "tbsp"}
+    ]
+  },
+  {
+    "id": "r12", "name": "Baked Salmon with Potatoes", "meal": "dinner", "minutes": 35, "servings": 2,
+    "tags": ["gluten_free", "dairy_free"],
+    "ingredients": [
+      {"item": "salmon fillet", "amount": 400, "unit": "g"},
+      {"item": "potatoes", "amount": 4, "unit": "pcs"},
+      {"item": "lemon", "amount": 1, "unit": "pcs"},
+      {"item": "olive oil", "amount": 2, "unit": "tbsp"}
+    ]
+  },
+  {
+    "id": "r13", "name": "Vegetable Curry", "meal": "dinner", "minutes": 35, "servings": 3,
+    "tags": ["vegetarian", "vegan", "gluten_free"],
+    "ingredients": [
+      {"item": "coconut milk", "amount": 400, "unit": "ml"},
+      {"item": "potatoes", "amount": 2, "unit": "pcs"},
+      {"item": "carrots", "amount": 2, "unit": "pcs"},
+      {"item": "rice", "amount": 200, "unit": "g"}
+    ]
+  },
+  {
+    "id": "r14", "name": "Peanut Noodles", "meal": "dinner", "minutes": 20, "servings": 2,
+    "tags": ["vegetarian", "vegan"],
+    "ingredients": [
+      {"item": "noodles", "amount": 250, "unit": "g"},
+      {"item": "peanut butter", "amount": 3, "unit": "tbsp"},
+      {"item": "soy sauce", "amount": 2, "unit": "tbsp"},
+      {"item": "garlic", "amount": 1, "unit": "cloves"}
+    ]
+  },
+  {
+    "id": "r15", "name": "Cheese Omelette with Salad", "meal": "dinner", "minutes": 15, "servings": 1,
+    "tags": ["vegetarian", "gluten_free"],
+    "ingredients": [
+      {"item": "eggs", "amount": 3, "unit": "pcs"},
+      {"item": "cheese", "amount": 50, "unit": "g"},
+      {"item": "cucumbers", "amount": 1, "unit": "pcs"},
+      {"item": "tomatoes", "amount": 1, "unit": "pcs"}
+    ]
+  },
+  {
+    "id": "r16", "name": "Stuffed Peppers with Rice", "meal": "dinner", "minutes": 50, "servings": 4,
+    "tags": ["vegetarian", "vegan", "gluten_free"],
+    "ingredients": [
+      {"item": "bell pepper", "amount": 4, "unit": "pcs"},
+      {"item": "rice", "amount": 200, "unit": "g"},
+      {"item": "onion", "amount": 1, "unit": "pcs"},
+      {"item": "tomatoes", "amount": 2, "unit": "pcs"}
+    ]
+  },
+  {
+    "id": "r17", "name": "Mushroom Risotto", "meal": "dinner", "minutes": 40, "servings": 2,
+    "tags": ["vegetarian", "gluten_free"],
+    "ingredients": [
+      {"item": "arborio rice", "amount": 200, "unit": "g"},
+      {"item": "mushrooms", "amount": 300, "unit": "g"},
+      {"item": "onion", "amount": 1, "unit": "pcs"},
+      {"item": "cheese", "amount": 50, "unit": "g"}
+    ]
+  }
+]

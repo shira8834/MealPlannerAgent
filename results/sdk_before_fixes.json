@@ -1,0 +1,292 @@
+{
+  "version": "sdk",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "memory_at_start": {
+    "preferences": {},
+    "last_plan": null
+  },
+  "sessions": [
+    {
+      "name": "session1",
+      "session_id": "75a05115-6119-4b81-8da2-e6369ed2e938",
+      "memory_after": {
+        "preferences": {
+          "avoid": [
+            "mushroom"
+          ]
+        },
+        "last_plan": {
+          "days": [
+            {
+              "day": 1,
+              "dinner": "r11"
+            },
+            {
+              "day": 2,
+              "dinner": "r12"
+            },
+            {
+              "day": 3,
+              "dinner": "r13"
+            }
+          ]
+        }
+      },
+      "turns": [
+        {
+          "user": "שלום! אני מחפשת רעיונות לארוחת ערב. אילו מתכונים יש במאגר?",
+          "answer": "שלום! במאגר יש 8 מתכונים לארוחת ערב:\n\n1. **Chicken Stir Fry** (מוקפץ עוף) – r10 – 25 דק'\n2. **Pasta with Tomato Sauce** (פסטה ברוטב עגבניות) – r11 – 20 דק'\n3. **Baked Salmon with Potatoes** (סלמון אפוי עם תפוחי אדמה) – r12 – 35 דק'\n4. **Vegetable Curry** (קארי ירקות) – r13 – 35 דק'\n5. **Peanut Noodles** (נודלס בוטנים) – r14 – 20 דק'\n6. **Cheese Omelette with Salad** (חביתת גבינה עם סלט) – r15 – 15 דק'\n7. **Stuffed Peppers with Rice** (פלפלים ממולאים באורז) – r16 – 50 דק'\n8. **Mushroom Risotto** (ריזוטו פטריות) – r17 – 40 דק'\n\nיש לך תזונה מסוימת, מאכל שאת לא אוכלת או מגבלת זמן? אם תגידי לי, אשמור את זה ואבנה לך תפריט ורשימת קניות.",
+          "tools": [
+            "search_recipes"
+          ],
+          "usage": {
+            "input_tokens": 4,
+            "cache_read_tokens": 3660,
+            "cache_write_tokens": 1690,
+            "output_tokens": 559,
+            "model_calls": 2,
+            "num_turns": 2,
+            "tools": [
+              "search_recipes"
+            ],
+            "cost_usd": 0.025667,
+            "session_cost_usd": 0.025667,
+            "seconds": 10.04,
+            "api_seconds": 11.2
+          }
+        },
+        {
+          "user": "חשוב לי שזה יישמר: אני לא אוכלת פטריות. בבקשה לשמור את ההעדפה הזאת.",
+          "answer": "שמרתי שאת לא אוכלת פטריות. מעכשיו אשאיר אותן מחוץ לתפריטים, כך שלמשל **Mushroom Risotto** (ריזוטו פטריות, r17) לא ייכנס.\n\nלבנות לך תפריט לכמה ימים?",
+          "tools": [
+            "save_preference"
+          ],
+          "usage": {
+            "input_tokens": 4,
+            "cache_read_tokens": 6376,
+            "cache_write_tokens": 742,
+            "output_tokens": 192,
+            "model_calls": 2,
+            "num_turns": 2,
+            "tools": [
+              "save_preference"
+            ],
+            "cost_usd": 0.011067,
+            "session_cost_usd": 0.036735,
+            "seconds": 7.37,
+            "api_seconds": 18.51
+          }
+        },
+        {
+          "user": "אפשר לבנות לי תוכנית ארוחות ערב לשלושה ימים?",
+          "answer": "התפריט שלך לשלושה ימים, בלי פטריות:\n\n- **יום 1:** Pasta with Tomato Sauce (פסטה ברוטב עגבניות) – r11\n- **יום 2:** Baked Salmon with Potatoes (סלמון אפוי עם תפוחי אדמה) – r12\n- **יום 3:** Vegetable Curry (קארי ירקות) – r13\n\nלהכין לך רשימת קניות לתפריט הזה?",
+          "tools": [
+            "plan_meals"
+          ],
+          "usage": {
+            "input_tokens": 4,
+            "cache_read_tokens": 7511,
+            "cache_write_tokens": 483,
+            "output_tokens": 247,
+            "model_calls": 2,
+            "num_turns": 2,
+            "tools": [
+              "plan_meals"
+            ],
+            "cost_usd": 0.010322,
+            "session_cost_usd": 0.047057,
+            "seconds": 5.21,
+            "api_seconds": 23.67
+          }
+        },
+        {
+          "user": "עכשיו אפשר רשימת קניות לתוכנית הזאת?",
+          "answer": "זו רשימת הקניות לשלושת הימים (r11, r12, r13):\n\n- carrots (גזר): 2 pcs\n- coconut milk (חלב קוקוס): 400 ml\n- garlic (שום): 2 cloves\n- lemon (לימון): 1 pcs\n- olive oil (שמן זית): 4 tbsp\n- pasta (פסטה): 250 g\n- potatoes (תפוחי אדמה): 6 pcs\n- rice (אורז): 200 g\n- salmon fillet (פילה סלמון): 400 g\n- tomatoes (עגבניות): 4 pcs\n\nבתיאבון! 🛒",
+          "tools": [
+            "create_shopping_list"
+          ],
+          "usage": {
+            "input_tokens": 4,
+            "cache_read_tokens": 8568,
+            "cache_write_tokens": 538,
+            "output_tokens": 302,
+            "model_calls": 2,
+            "num_turns": 2,
+            "tools": [
+              "create_shopping_list"
+            ],
+            "cost_usd": 0.012074,
+            "session_cost_usd": 0.05913,
+            "seconds": 6.67,
+            "api_seconds": 30.28
+          }
+        }
+      ]
+    },
+    {
+      "name": "session2",
+      "session_id": "d0c7e4df-5cdf-460a-a62d-6a84c4c6c68a",
+      "memory_after": {
+        "preferences": {
+          "avoid": []
+        },
+        "last_plan": {
+          "days": [
+            {
+              "day": 1,
+              "dinner": "r10"
+            },
+            {
+              "day": 2,
+              "dinner": "r11"
+            },
+            {
+              "day": 3,
+              "dinner": "r12"
+            }
+          ]
+        }
+      },
+      "turns": [
+        {
+          "user": "היי, חזרתי. מה שמור אצלך על ההעדפות שלי ועל התוכנית שהכנו?",
+          "answer": "ברוך שובך! זה מה שיש לי שמור:\n\n**העדפות:**\n- להימנע מ: פטריות (mushroom)\n- לא הוגדרו הגבלת דיאטה וזמן הכנה מקסימלי\n\n**התוכנית השמורה (ארוחות ערב ל־3 ימים):**\n- יום 1: מתכון r11\n- יום 2: מתכון r12\n- יום 3: מתכון r13\n\nבזיכרון שמורים רק מספרי המתכונים, בלי השמות שלהם. רוצה שאכין רשימת קניות לתוכנית הזו, או שנשנה משהו בהעדפות או בתוכנית?",
+          "tools": [],
+          "usage": {
+            "input_tokens": 4,
+            "cache_read_tokens": 2998,
+            "cache_write_tokens": 2109,
+            "output_tokens": 310,
+            "model_calls": 2,
+            "num_turns": 2,
+            "tools": [],
+            "cost_usd": 0.0239,
+            "session_cost_usd": 0.0239,
+            "seconds": 7.03,
+            "api_seconds": 8.29
+          }
+        },
+        {
+          "user": "שיניתי את דעתי: עכשיו אני כן אוכלת פטריות. בבקשה לעדכן את ההעדפה.",
+          "answer": "עדכנתי את ההעדפה: הסרתי את הפטריות, ועכשיו אין מאכלים ברשימת ההימנעות.\n\nהתוכנית השמורה (r11, r12, r13) לא השתנתה. היא נבנתה כשעוד נמנעת מפטריות, ולכן אין בה מתכונים עם פטריות. רוצה שאבנה תוכנית חדשה שיכולה לכלול גם מתכונים כאלה?",
+          "tools": [
+            "save_preference"
+          ],
+          "usage": {
+            "input_tokens": 4,
+            "cache_read_tokens": 5642,
+            "cache_write_tokens": 649,
+            "output_tokens": 242,
+            "model_calls": 2,
+            "num_turns": 2,
+            "tools": [
+              "save_preference"
+            ],
+            "cost_usd": 0.011176,
+            "session_cost_usd": 0.035077,
+            "seconds": 4.0,
+            "api_seconds": 12.24
+          }
+        },
+        {
+          "user": "אפשר תוכנית חדשה של ארוחות ערב לשלושה ימים?",
+          "answer": "הנה התוכנית החדשה לארוחות ערב, והיא כבר שמורה:\n\n- **יום 1:** Chicken Stir Fry ‏(r10)\n- **יום 2:** Pasta with Tomato Sauce ‏(r11)\n- **יום 3:** Baked Salmon with Potatoes ‏(r12)\n\nהתוכנית נבנתה בלי הגבלות על מאכלים, אבל אף אחד מהמתכונים שנבחרו לא כולל פטריות. רוצה רשימת קניות לתוכנית?",
+          "tools": [
+            "plan_meals"
+          ],
+          "usage": {
+            "input_tokens": 4,
+            "cache_read_tokens": 6761,
+            "cache_write_tokens": 554,
+            "output_tokens": 302,
+            "model_calls": 2,
+            "num_turns": 2,
+            "tools": [
+              "plan_meals"
+            ],
+            "cost_usd": 0.01184,
+            "session_cost_usd": 0.046917,
+            "seconds": 4.16,
+            "api_seconds": 16.36
+          }
+        },
+        {
+          "user": "מה ההעדפות השמורות שלי עכשיו?",
+          "answer": "אין לך כרגע העדפות שמורות:\n- **דיאטה:** לא הוגדרה\n- **מאכלים להימנע מהם:** אין (הסרנו את הפטריות)\n- **זמן הכנה מקסימלי:** לא הוגדר\n\n**התוכנית השמורה (ארוחות ערב):**\n- יום 1: Chicken Stir Fry ‏(r10)\n- יום 2: Pasta with Tomato Sauce ‏(r11)\n- יום 3: Baked Salmon with Potatoes ‏(r12)\n\nרוצה להוסיף העדפה כלשהי, למשל דיאטה או הגבלת זמן?",
+          "tools": [],
+          "usage": {
+            "input_tokens": 2,
+            "cache_read_tokens": 3781,
+            "cache_write_tokens": 353,
+            "output_tokens": 232,
+            "model_calls": 1,
+            "num_turns": 1,
+            "tools": [],
+            "cost_usd": 0.008228,
+            "session_cost_usd": 0.055145,
+            "seconds": 2.53,
+            "api_seconds": 18.86
+          }
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "input_tokens": 30,
+    "cache_read_tokens": 45297,
+    "cache_write_tokens": 7118,
+    "output_tokens": 2386,
+    "model_calls": 15,
+    "cost_usd": 0.114274,
+    "seconds": 47.01
+  },
+  "checks": [
+    {
+      "name": "clean_start",
+      "passed": true,
+      "detail": "memory at start: {'preferences': {}, 'last_plan': None}"
+    },
+    {
+      "name": "search_tool_used",
+      "passed": true,
+      "detail": "turn 1 tools: ['search_recipes']"
+    },
+    {
+      "name": "mushroom_preference_saved",
+      "passed": true,
+      "detail": "avoid after session 1: ['mushroom']"
+    },
+    {
+      "name": "plan_3_days_without_mushrooms",
+      "passed": true,
+      "detail": "plan after session 1: ['r11', 'r12', 'r13']"
+    },
+    {
+      "name": "shopping_list_created",
+      "passed": true,
+      "detail": "turn 4 tools: ['create_shopping_list']"
+    },
+    {
+      "name": "new_instance_in_session2",
+      "passed": true,
+      "detail": "session ids: 75a05115-6119-4b81-8da2-e6369ed2e938 / d0c7e4df-5cdf-460a-a62d-6a84c4c6c68a"
+    },
+    {
+      "name": "memory_recalled_in_session2",
+      "passed": true,
+      "detail": "turn 5 answer mentions mushrooms"
+    },
+    {
+      "name": "contradiction_replaced_old_preference",
+      "passed": true,
+      "detail": "avoid after session 2: []"
+    },
+    {
+      "name": "mushroom_recipes_available_again",
+      "passed": true,
+      "detail": "mushroom recipes allowed now: ['r10', 'r17']; plan after session 2: ['r10', 'r11', 'r12']"
+    }
+  ],
+  "checks_passed": "9/9"
+}
