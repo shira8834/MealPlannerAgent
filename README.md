@@ -109,7 +109,7 @@ MealPlannerAgent/
 
 ## 🚀 התקנה והרצה
 
-**דרישות:** Python 3.13 ו-[uv](https://docs.astral.sh/uv/).
+**דרישות:** Python 3.13 ו-uv.
 
 ```powershell
 git clone <repo-url>
@@ -130,7 +130,7 @@ uv run python SDK/main.py --scenario scenario.json --out results/sdk.json --stde
 
 ### 🔧 גרסת API
 
-צריך מפתח מ-[Claude Console](https://platform.claude.com/). מעתיקים את `.env.example` ל-`.env` ושמים בו את המפתח. הקובץ `.env` לא נכנס ל-Git.
+צריך מפתח API מ-Claude Console. מעתיקים את `.env.example` ל-`.env` ושמים בו את המפתח. הקובץ `.env` לא נכנס ל-Git.
 
 ```powershell
 uv run python API/main.py --session s1            # צ'אט
@@ -198,13 +198,6 @@ uv run python -m pytest -q                        # 92 בדיקות offline, ב�
 
 ההשוואה המלאה, הממצאים, היתרונות, החסרונות וההמלצה נמצאים ב-[REPORT.md](REPORT.md).
 
-## ⚠️ מגבלות
+## 👩‍💻 מגישות
 
-- **ה-SDK הורץ באמת** מול `claude-opus-5-5`, דרך התחברות למנוי Claude Pro. העלות שמוצגת היא הערכה שה-SDK מחשב בעצמו, ולא חיוב.
-- **ה-API לא הורץ מול מודל אמיתי.** הוא נבדק רק עם `FakeClient` ו"מודל מתוסרט". הסימולציה מוכיחה שכל שמונת קובצי ה-harness עובדים מקצה לקצה, ושהבדיקות עוברות על המצב השמור. היא **לא** מודדת טוקנים, cache, עלות או זמן, ולכן אין כאן מסקנה כמותית על API מול SDK.
-- הרצה אחת לכל גרסה, ולכן אין מדד לשונות בין הרצות.
-- ה-prompt בשתי הגרסאות לא זהה לגמרי, כי Claude Code מוסיף לשיחה תוכן משלו. הפירוט נמצא ב-[REPORT.md](REPORT.md#12-מגבלות-ההשוואה).
-
-## 🎓 קרדיט
-
-פרויקט לימודי במסגרת קורס AI (שנה ג׳), שנועד להשוות בין בניית harness עצמאי מעל Claude Messages API לבין Claude Agent SDK. הפרויקט משתמש ב-[Anthropic Python SDK](https://github.com/anthropics/anthropic-sdk-python) וב-[Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python).
+מלכי דיסלדורף ושירה שניידמן
